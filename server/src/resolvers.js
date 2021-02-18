@@ -13,8 +13,8 @@ module.exports = {
   },
   Mutation: {
     createUser: async (_, args) => {
-      const { name, password } = args;
-      const author = new Author({ name, password });
+      const { name, password, age, photo } = args;
+      const author = new Author({ name, password, age, photo });
       await author.save();
       return author;
     },

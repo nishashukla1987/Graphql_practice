@@ -13,6 +13,7 @@ const AuthorSchema = new mongoose.Schema({
   photo: String,
   password: String,
   token: String,
+  age: Number,
 });
 
 const Author = mongoose.model('Author', AuthorSchema);
